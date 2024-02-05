@@ -1,0 +1,61 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 10, 10);
+}
+
+.navbar {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border-bottom: 1px solid deepskyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed; /* Optionally, you can use 'fixed' to make the navbar stay at the top of the page when scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navLogoImg {
+    max-width: 48%;
+}
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding-top:20px;
+    margin: 0 14px;
+    font-size: 1.2em;
+}
+
+.landingPageContainer {
+    text-align: center;
+    padding: 100px;
+}
+
+.landingPageImage {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+  
+}
+@media (max-width: 765px) {
+    .landingPageContainer {
+        padding-top: 16%; /* Adjust the value as needed */
+    }
+}

@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#5e17eb;
+}
+
+.navbar {
+    background-color: #5e17eb;
+    border-bottom:1px solid #36a9e1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed; /* Optionally, you can use 'fixed' to make the navbar stay at the top of the page when scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.navLogoImg {
+    max-width: 48%;
+}
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+.mapPageContainer{
+    text-align: center;
+    padding: 100px;
+}
+
+.mapPageImage{
+    max-width: 99%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+  
+}
+@media (max-width: 765px) {
+    .mapPageContainer {
+        padding-top: 16%; /* Adjust the value as needed */
+    }
+}
